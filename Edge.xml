@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="false" parallel="none">
+  <test name="EdgeTest">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="com.tc911.testcases.reports200.Reports200">
+      <!-- <methods>
+         <include name="creat200CaseLogout"></include>
+        </methods> -->
+      <methods>
+         <include name="createCase200"></include>
+        </methods>
+        <!-- <methods>
+         <include name="openCase200"></include>
+        </methods> -->
+      <!-- <methods>
+         <include name="linkCase200"></include>
+        </methods> -->
+        <!-- <methods>
+         <include name="printCase200"></include>
+        </methods> -->
+   <!--      <methods>
+         <include name="logInOut"></include>
+        </methods> -->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

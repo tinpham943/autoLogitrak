@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4">
+  <test name="ChromeTest" preserve-order="true">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes >
+      <!-- <class name="com.tc911.testcases.mastername.MasterNameMainTest">
+      <methods>
+      		<include name="MN_Opens_All_Fields_Disabled"></include>
+      	</methods>
+      </class> -->
+      <class name="com.tc911.testcases.login.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="EdgeTest">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="com.tc911.testcases.login.LoginTest" />
+      <!-- <class name="com.tc911.testcases.mastername.MasterNameMainTest">
+      	<methods>
+      		<include name="MN_Opens_All_Fields_Disabled"></include>
+      	</methods>
+      </class> -->
+    </classes>
+  </test> 
+  <test name="FirefoxTest" preserve-order="true">
+  <parameter name="browser" value="FF"></parameter>
+    <classes >
+      <!-- <class name="com.tc911.testcases.mastername.MasterNameMainTest"/> -->
+      <class name="com.tc911.testcases.login.LoginTest"/>
+    </classes>
+  </test> 
+  <test name="IETest" preserve-order="true">
+  <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <!-- <class name="com.tc911.testcases.mastername.MasterNameMainTest">
+      	<methods>
+      		<include name="Reopen_Created_MasterName"></include>
+      	</methods>
+      </class> -->
+      <class name="com.tc911.testcases.login.LoginTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.tc911.testcases.reports200.Reports200">
+        <methods>
+          <include name="accessMainMenu"/>
+          <include name="setUp"/>
+          <include name="createCase200"/>
+        </methods>
+      </class> <!-- com.tc911.testcases.reports200.Reports200 -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
